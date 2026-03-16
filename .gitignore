@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Environment variables - NEVER commit this
+.env
+.env.local
+.env.development
+.env.production
+
+# TypeScript compiled output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Testing
+coverage/
+
+# Misc
+*.tsbuildinfo
