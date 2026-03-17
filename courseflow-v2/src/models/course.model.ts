@@ -11,7 +11,7 @@ export interface Course{
     code: string;
     section?: string;
     semester: string;
-    instructurName: string;
+    instructorName: string;
     color: string;
     meetingTimes: MeetingTime[];
 }
