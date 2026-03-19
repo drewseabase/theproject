@@ -16,7 +16,7 @@ export class MockAdapter implements LMSAdapter{
         const user = mockUsers.find(
             (u) => u.email.toLowerCase() == email.toLowerCase()
         );
-
+        
         if(!user){
             throw new Error("Invalid email or password");
         }
