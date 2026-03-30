@@ -33,6 +33,15 @@ function sanitizeUser(user: User): Omit<User, "passwordHash">{
  */
 
 router.post("/login", async(req: Request, res: Response): Promise<void> => {
+
+    if(!req.body || typeof req.body !== "object"){
+        res.status(400).json({
+            error: "BadRequest",
+            message: "Request body is required",
+        });
+        return;
+    }
+
     const {email, password} = req.body;
 
     /*Basic input validation*/
